@@ -1,4 +1,4 @@
-## Guia do Universo Marvel** - Imersão Dev com Google Gemini
+## Guia do Universo Marvel - Imersão Dev com Google Gemini
 
 ### **O que é esse projeto?**
 
