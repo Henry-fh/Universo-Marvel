@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guia do Universo Marvel</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        p {
+          text-align: center;
+        }
+      </style>
+</head>
+<body>
+    <header>
+       <H1>Conheça o Universo Marvel Comics de uma forma fácil</H1>
+    </header>
+    <main>
+        <section>
+       <input type="text" name="busca" placeholder="Escolha seu Personagem" id="campo-pesquisa">  
+       <button onclick="pesquisar()">Pesquisar</button>
+    </section>
+    <section class="resultados-pesquisa" 
+    id="resultados-pesquisa">
+     <!-- <div class="item-resultado">
+            <h2>
+                <a href="#" target="_blank">Capitão América</a>
+            </h2>
+            <p class="descricao-meta">O Capitão América é um dos super-heróis mais icônicos da Marvel Comics. Criado durante a Segunda Guerra Mundial, Steve Rogers, um jovem franzino, transforma-se em um super-soldado graças a um soro experimental, adquirindo força, agilidade e resistência sobre-humanas.</p>   
+                <a href="https://pt.wikipedia.org/wiki/Capitão_América" target="_blank">Mais Informações</a>
+        </div>
+        
+        <div class="item-resultado">
+            <h2>
+                <a href="#" target="_blank">Homem de Ferro</a>
+            </h2>
+            <p class="descricao-meta">O Homem de Ferro: Gênio, Bilionário, Playboy, Filantropo
+                Tony Stark, o Homem de Ferro, é um bilionário, inventor e filantropo que, após ser ferido em um sequestro, cria uma armadura de alta tecnologia para salvar sua vida. Sob a identidade do Homem de Ferro, ele se torna um super-herói, usando sua inteligência e recursos para proteger o mundo.
+            </p>   
+            <a href="https://pt.wikipedia.org/wiki/Homem_de_Ferro" target="_blank">Mais Informações</a>
+        </div>
+        
+        <div class="item-resultado">
+            <h2>
+                <a href="#" target="_blank">Thor</a>
+            </h2>
+            <p class="descricao-meta">Thor: O Deus do Trovão
+                Thor é um deus nórdico, filho de Odin, e um dos Vingadores. Ele possui super força, durabilidade e a capacidade de controlar o clima. Seu martelo, Mjolnir, concede a ele poderes ainda maiores, como voar e manipular a energia. 
+            </p>   
+            <a href="https://pt.wikipedia.org/wiki/Thor_(Marvel_Comics)" target="_blank">Mais Informações</a>
+        </div>
+        
+        <div class="item-resultado">
+            <h2>
+                <a href="#" target="_blank">Hulk</a>
+            </h2>
+            <p class="descricao-meta">O Hulk: A Fúria Encarnada
+                Bruce Banner, um cientista brilhante, transforma-se no Hulk, uma criatura verde de força inimaginável, quando fica furioso. O Hulk é uma representação da raiva e da força bruta, e suas batalhas internas entre Banner e a fera interior são um dos aspectos mais marcantes do personagem.
+            </p>   
+            <a href="https://pt.wikipedia.org/wiki/Hulk" target="_blank">Mais Informações</a>
+        </div>
+        
+        <div class="item-resultado">
+            <h2>
+                <a href="#" target="_blank">Homem Aranha</a>
+            </h2>
+            <p class="descricao-meta">O Homem-Aranha: O Amigável Bairro da vizinhança
+                Peter Parker, um adolescente nerd, é picado por uma aranha radioativa, ganhando habilidades sobre-humanas como força, agilidade e a capacidade de aderir a superfícies. Com grande poder, vem grande responsabilidade, e Peter usa seus poderes para proteger Nova York como o Homem-Aranha.
+            </p>   
+            <a href="https://pt.wikipedia.org/wiki/Homem-Aranha" target="_blank">Mais Informações</a>
+        </div>
+        
+        <div class="item-resultado">
+            <h2>
+                <a href="#" target="_blank">Viúva Negra</a>
+            </h2>
+            <p class="descricao-meta">Natasha Romanoff, a Viúva Negra, é uma ex-agente da KGB treinada como assassina. Ela se juntou aos Vingadores e se tornou uma das suas integrantes mais valiosas, utilizando suas habilidades de espionagem, combate corpo a corpo e inteligência para proteger o mundo.
+            </p>   
+            <a href="https://pt.wikipedia.org/wiki/Viúva_Negra_(Natasha_Romanova)" target="_blank">Mais Informações</a>
+        </div>
+        
+        <div class="item-resultado">
+    <h2>
+        <a href="#" target="_blank">Feiticeira Escarlate</a>
+    </h2>
+    <p class="descricao-meta">Wanda Maximoff é uma mutante com a capacidade de manipular a realidade, usando magia do caos. Ela é membro dos Vingadores e tem uma história complexa e trágica.</p>
+    <a href="https://pt.wikipedia.org/wiki/Feiticeira_Escarlate" target="_blank">Mais Informações</a>
+</div>
+
+<div class="item-resultado">
+    <h2>
+        <a href="#" target="_blank">Pantera Negra</a>
+    </h2>
+    <p class="descricao-meta">T'Challa é o rei de Wakanda, uma nação africana tecnologicamente avançada. Ele possui habilidades sobre-humanas obtidas através de uma erva sagrada e é um mestre em combate.</p>
+    <a href="https://pt.wikipedia.org/wiki/Pantera_Negra" target="_blank">Mais Informações</a>
+</div>
+
+<div class="item-resultado">
+    <h2>
+        <a href="#" target="_blank">Venom</a>
+    </h2>
+    <p class="descricao-meta">Venom é um simbionte alienígena que se liga a um hospedeiro humano, concedendo-lhe força, agilidade e outras habilidades sobre-humanas. É conhecido por sua aparência monstruosa e personalidade complexa.</p>
+    <a href="https://pt.wikipedia.org/wiki/Venom_(personagem)" target="_blank">Mais Informações</a>
+</div>
+
+<div class="item-resultado">
+    <h2>
+        <a href="#" target="_blank">Ciclope</a>
+    </h2>
+    <p class="descricao-meta">Scott Summers, o Ciclope, é um mutante com a capacidade de disparar raios ópticos de seus olhos. Ele é um dos membros fundadores dos X-Men.</p>
+    <a href="https://pt.wikipedia.org/wiki/Ciclope" target="_blank">Mais Informações</a>
+</div>
+
+<div class="item-resultado">
+    <h2>
+        <a href="#" target="_blank">Deadpool</a>
+    </h2>
+    <p class="descricao-meta">Wade Wilson, o Deadpool, é um mercenário com um fator de cura acelerado e um senso de humor sombrio. Ele é conhecido por quebrar a quarta parede e por suas habilidades de combate.</p>
+    <a href="https/pt.wikipedia.org/wiki/Deadpool" target="_blank">Mais Informações</a>
+</div>
+
+<div class="item-resultado">
+    <h2>
+        <a href="#" target="_blank">Wolverine</a>
+    </h2>
+    <p class="descricao-meta">Logan, o Wolverine, é um mutante com garras retráteis de adamantium, um fator de cura acelerado e sentidos aguçados. Ele é um dos membros mais antigos dos X-Men.</p>
+    <a href="https://pt.wikipedia.org/wiki/Wolverine" target="_blank">Mais Informações</a>
+</div>
+
+<div class="item-resultado">
+    <h2>
+        <a href="#" target="_blank">Professor X</a>
+    </td>
+    <p class="descricao-meta">Charles Xavier é um mutante telepata poderoso que fundou os X-Men. Ele luta pelos direitos dos mutantes e busca a paz entre humanos e mutantes.</p>
+    <a href="https://pt.wikipedia.org/wiki/Professor_X" target="_blank">Mais Informações</a>
+</div>
+
+<div class="item-resultado">
+    <h2>
+        <a href="#" target="_blank">Magneto</a>
+    </h2>
+    <p class="descricao-meta">Magneto é um mutante com a capacidade de manipular metal. Ele é um líder carismático que luta pelos direitos dos mutantes, mas muitas vezes por meios extremos.</p>
+    <a href="https://pt.wikipedia.org/wiki/Magneto" target="_blank">Mais Informações</a>
+</div>
+
+<div class="item-resultado">
+    <h2>
+        <a href="#" target="_blank">Doutor Destino</a>
+    </h2>
+    <p class="descricao-meta">O Doutor Destino é um cientista brilhante e um dos maiores inimigos do Quarteto Fantástico. Ele utiliza uma armadura mágica que lhe concede poderes cósmicos.</p>
+    <a href="https://pt.wikipedia.org/wiki/Doutor_Destino" target="_blank">Mais Informações</a>
+</div>
+
+<div class="item-resultado">
+    <h2>
+        <a href="#" target="_blank">Galactus</a>
+    </h2>
+    <p class="descricao-meta">Galactus é uma entidade cósmica que devora planetas para sobreviver. Ele é considerado um dos seres mais poderosos do Universo Marvel.</p>
+    <a href="https://pt.wikipedia.org/wiki/Galactus" target="_blank">Mais Informações</a>
+</div>
+
+<div class="item-resultado">
+    <h2>
+        <a href="#" target="_blank">Thanos</a>
+    </h2>
+    <p class="descricao-meta">Thanos é um titã louco obcecado pela morte. Ele busca as Joias do Infinito para eliminar metade da vida no universo.</p>
+    <a href="https://pt.wikipedia.org/wiki/Thanos" target="_blank">Mais Informações</a>
+</div>
+
+-->
+    </section>
+    </main>
+    <footer>
+        <p>2024 - O Universo Comics na palma da sua mão </p>
+        <p>Todos os Direitos autorais são reservados</p>
+    </footer>
+    <script src="dados.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
