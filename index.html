@@ -1,180 +1,193 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Guia do Universo Marvel</title>
-    <link rel="stylesheet" href="styles.css">
-    <style>
-        p {
-          text-align: center;
-        }
-      </style>
+    <title>Quiz para programadores</title>
+    <meta name="description" content="Quiz para programadores é um jogo de perguntas e respostas sobre programação.">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-       <H1>Conheça o Universo Marvel Comics de uma forma fácil</H1>
+        <h1>Quiz interativo para programadores</h1>
+        <p>Teste seus conhecimentos em programação e veja sua pontuação!</p>
     </header>
     <main>
         <section>
-       <input type="text" name="busca" placeholder="Escolha seu Personagem" id="campo-pesquisa">  
-       <button onclick="pesquisar()">Pesquisar</button>
-    </section>
-    <section class="resultados-pesquisa" 
-    id="resultados-pesquisa">
-     <!-- <div class="item-resultado">
-            <h2>
-                <a href="#" target="_blank">Capitão América</a>
-            </h2>
-            <p class="descricao-meta">O Capitão América é um dos super-heróis mais icônicos da Marvel Comics. Criado durante a Segunda Guerra Mundial, Steve Rogers, um jovem franzino, transforma-se em um super-soldado graças a um soro experimental, adquirindo força, agilidade e resistência sobre-humanas.</p>   
-                <a href="https://pt.wikipedia.org/wiki/Capitão_América" target="_blank">Mais Informações</a>
-        </div>
-        
-        <div class="item-resultado">
-            <h2>
-                <a href="#" target="_blank">Homem de Ferro</a>
-            </h2>
-            <p class="descricao-meta">O Homem de Ferro: Gênio, Bilionário, Playboy, Filantropo
-                Tony Stark, o Homem de Ferro, é um bilionário, inventor e filantropo que, após ser ferido em um sequestro, cria uma armadura de alta tecnologia para salvar sua vida. Sob a identidade do Homem de Ferro, ele se torna um super-herói, usando sua inteligência e recursos para proteger o mundo.
-            </p>   
-            <a href="https://pt.wikipedia.org/wiki/Homem_de_Ferro" target="_blank">Mais Informações</a>
-        </div>
-        
-        <div class="item-resultado">
-            <h2>
-                <a href="#" target="_blank">Thor</a>
-            </h2>
-            <p class="descricao-meta">Thor: O Deus do Trovão
-                Thor é um deus nórdico, filho de Odin, e um dos Vingadores. Ele possui super força, durabilidade e a capacidade de controlar o clima. Seu martelo, Mjolnir, concede a ele poderes ainda maiores, como voar e manipular a energia. 
-            </p>   
-            <a href="https://pt.wikipedia.org/wiki/Thor_(Marvel_Comics)" target="_blank">Mais Informações</a>
-        </div>
-        
-        <div class="item-resultado">
-            <h2>
-                <a href="#" target="_blank">Hulk</a>
-            </h2>
-            <p class="descricao-meta">O Hulk: A Fúria Encarnada
-                Bruce Banner, um cientista brilhante, transforma-se no Hulk, uma criatura verde de força inimaginável, quando fica furioso. O Hulk é uma representação da raiva e da força bruta, e suas batalhas internas entre Banner e a fera interior são um dos aspectos mais marcantes do personagem.
-            </p>   
-            <a href="https://pt.wikipedia.org/wiki/Hulk" target="_blank">Mais Informações</a>
-        </div>
-        
-        <div class="item-resultado">
-            <h2>
-                <a href="#" target="_blank">Homem Aranha</a>
-            </h2>
-            <p class="descricao-meta">O Homem-Aranha: O Amigável Bairro da vizinhança
-                Peter Parker, um adolescente nerd, é picado por uma aranha radioativa, ganhando habilidades sobre-humanas como força, agilidade e a capacidade de aderir a superfícies. Com grande poder, vem grande responsabilidade, e Peter usa seus poderes para proteger Nova York como o Homem-Aranha.
-            </p>   
-            <a href="https://pt.wikipedia.org/wiki/Homem-Aranha" target="_blank">Mais Informações</a>
-        </div>
-        
-        <div class="item-resultado">
-            <h2>
-                <a href="#" target="_blank">Viúva Negra</a>
-            </h2>
-            <p class="descricao-meta">Natasha Romanoff, a Viúva Negra, é uma ex-agente da KGB treinada como assassina. Ela se juntou aos Vingadores e se tornou uma das suas integrantes mais valiosas, utilizando suas habilidades de espionagem, combate corpo a corpo e inteligência para proteger o mundo.
-            </p>   
-            <a href="https://pt.wikipedia.org/wiki/Viúva_Negra_(Natasha_Romanova)" target="_blank">Mais Informações</a>
-        </div>
-        
-        <div class="item-resultado">
-    <h2>
-        <a href="#" target="_blank">Feiticeira Escarlate</a>
-    </h2>
-    <p class="descricao-meta">Wanda Maximoff é uma mutante com a capacidade de manipular a realidade, usando magia do caos. Ela é membro dos Vingadores e tem uma história complexa e trágica.</p>
-    <a href="https://pt.wikipedia.org/wiki/Feiticeira_Escarlate" target="_blank">Mais Informações</a>
-</div>
+            <h2>Sobre esse quiz</h2>
+            <p><strong>Este quiz</strong> foi desenvolvido para testar meu conhecimento em desenvolvimento web e testar os seus conhecimentos em programação, como <em>linguagem de programação</em>, conceitos básicos e mais.</p>
+            <p>Você encontrará diferentes tipos de perguntas, incluindo múltipla escolha, textos e perguntas de datas.<br>Desafie-se com este quiz!</p>
+            <p>Você poderá encontrar alguns acrônimos como <abbr title="Hypertext Markup Language">HTML</abbr> e <abbr title="Cascading style Sheets">CSS</abbr>, que são comumente usados em questões relacionadas ao desenvolvimento web.</p>
+        </section>
 
-<div class="item-resultado">
-    <h2>
-        <a href="#" target="_blank">Pantera Negra</a>
-    </h2>
-    <p class="descricao-meta">T'Challa é o rei de Wakanda, uma nação africana tecnologicamente avançada. Ele possui habilidades sobre-humanas obtidas através de uma erva sagrada e é um mestre em combate.</p>
-    <a href="https://pt.wikipedia.org/wiki/Pantera_Negra" target="_blank">Mais Informações</a>
-</div>
+        <!-- Pergunta 1: Múltipla escolha -->
+        <section>
+            <h2>Pergunta 1: Qual linguagem é usada para estruturar páginas web?</h2>
+            <form>
+                <input type="radio" value="HTML" id="p1a" name="p1">
+                <label for="p1a">HTML</label><br>
+                <input type="radio" value="Python" id="p1b" name="p1">
+                <label for="p1b">Python</label><br>
+                <input type="radio" value="Javascript" id="p1c" name="p1">
+                <label for="p1c">Javascript</label>
+            </form>
+        </section>
 
-<div class="item-resultado">
-    <h2>
-        <a href="#" target="_blank">Venom</a>
-    </h2>
-    <p class="descricao-meta">Venom é um simbionte alienígena que se liga a um hospedeiro humano, concedendo-lhe força, agilidade e outras habilidades sobre-humanas. É conhecido por sua aparência monstruosa e personalidade complexa.</p>
-    <a href="https://pt.wikipedia.org/wiki/Venom_(personagem)" target="_blank">Mais Informações</a>
-</div>
+        <!-- Pergunta 2: Texto -->
+        <section>
+            <h2>Pergunta 2: Na URL https://www.google.com o trecho "google.com" é o_____</h2>
+            <form>
+                <input type="text" id="p2" name="p2" placeholder="Digite sua resposta aqui">
+            </form>
+        </section>
 
-<div class="item-resultado">
-    <h2>
-        <a href="#" target="_blank">Ciclope</a>
-    </h2>
-    <p class="descricao-meta">Scott Summers, o Ciclope, é um mutante com a capacidade de disparar raios ópticos de seus olhos. Ele é um dos membros fundadores dos X-Men.</p>
-    <a href="https://pt.wikipedia.org/wiki/Ciclope" target="_blank">Mais Informações</a>
-</div>
+        <!-- Pergunta 3: Senha -->
+        <section>
+            <h2>Pergunta 3: Escreva um exemplo de senha forte</h2>
+            <form>
+                <input type="password" id="p3" name="p3" placeholder="Digite sua senha aqui">
+                <button type="button" onclick="mostrarSenha()" id="toggleSenhaBtn">Mostrar</button>
+            </form>
+        </section>
 
-<div class="item-resultado">
-    <h2>
-        <a href="#" target="_blank">Deadpool</a>
-    </h2>
-    <p class="descricao-meta">Wade Wilson, o Deadpool, é um mercenário com um fator de cura acelerado e um senso de humor sombrio. Ele é conhecido por quebrar a quarta parede e por suas habilidades de combate.</p>
-    <a href="https/pt.wikipedia.org/wiki/Deadpool" target="_blank">Mais Informações</a>
-</div>
+        <!-- Pergunta 4: Data -->
+        <section>
+            <h2>Pergunta 4: Em que ano o HTML lançou sua primeira versão?</h2>
+            <form>
+                <input type="number" id="p4" name="p4" placeholder="Ex: 1991" min="1990" max="2025">
+            </form>
+        </section>
 
-<div class="item-resultado">
-    <h2>
-        <a href="#" target="_blank">Wolverine</a>
-    </h2>
-    <p class="descricao-meta">Logan, o Wolverine, é um mutante com garras retráteis de adamantium, um fator de cura acelerado e sentidos aguçados. Ele é um dos membros mais antigos dos X-Men.</p>
-    <a href="https://pt.wikipedia.org/wiki/Wolverine" target="_blank">Mais Informações</a>
-</div>
+        <!-- Pergunta 5: Seleção múltipla -->
+        <section>
+            <h2>Pergunta 5: Qual dessas tecnologias são consideradas linguagens de programação?</h2>
+            <form>
+                <input type="checkbox" id="p5a" name="p5" value="HTML">
+                <label for="p5a">HTML</label><br>
+                <input type="checkbox" id="p5b" name="p5" value="Java">
+                <label for="p5b">Java</label><br>
+                <input type="checkbox" id="p5c" name="p5" value="JavaScript">
+                <label for="p5c">JavaScript</label><br>
+                <input type="checkbox" id="p5d" name="p5" value="CSS">
+                <label for="p5d">CSS</label>
+            </form>
+        </section>
 
-<div class="item-resultado">
-    <h2>
-        <a href="#" target="_blank">Professor X</a>
-    </td>
-    <p class="descricao-meta">Charles Xavier é um mutante telepata poderoso que fundou os X-Men. Ele luta pelos direitos dos mutantes e busca a paz entre humanos e mutantes.</p>
-    <a href="https://pt.wikipedia.org/wiki/Professor_X" target="_blank">Mais Informações</a>
-</div>
+        <!-- Pergunta 6: Upload de arquivo -->
+        <section>
+            <h2>Pergunta 6: Faça o upload de um arquivo contendo código HTML</h2>
+            <form>
+                <input type="file" id="p6" name="p6" accept=".html">
+            </form>
+        </section>
 
-<div class="item-resultado">
-    <h2>
-        <a href="#" target="_blank">Magneto</a>
-    </h2>
-    <p class="descricao-meta">Magneto é um mutante com a capacidade de manipular metal. Ele é um líder carismático que luta pelos direitos dos mutantes, mas muitas vezes por meios extremos.</p>
-    <a href="https://pt.wikipedia.org/wiki/Magneto" target="_blank">Mais Informações</a>
-</div>
+        <!-- Pergunta 7: Menu suspenso -->
+        <section>
+            <h2>Pergunta 7: Selecione o atributo do input que define o seu tipo:</h2>
+            <form>
+                <select id="p7" name="p7">
+                    <option value="type">type</option>
+                    <option value="name">name</option>
+                    <option value="id">id</option>
+                    <option value="placeholder">placeholder</option>
+                </select>
+            </form>
+        </section>
 
-<div class="item-resultado">
-    <h2>
-        <a href="#" target="_blank">Doutor Destino</a>
-    </h2>
-    <p class="descricao-meta">O Doutor Destino é um cientista brilhante e um dos maiores inimigos do Quarteto Fantástico. Ele utiliza uma armadura mágica que lhe concede poderes cósmicos.</p>
-    <a href="https://pt.wikipedia.org/wiki/Doutor_Destino" target="_blank">Mais Informações</a>
-</div>
+        <!-- Pergunta 8: Imagem -->
+        <section>
+            <h2>Pergunta 8: Qual linguagem de programação é representada pelo logotipo abaixo?</h2>
+            <figure>
+                <img src="j08.webp" alt="logotipo de uma linguagem de programação" width="300"><br>
+                <figcaption>Logotipo da linguagem de programação</figcaption>
+            </figure>
+            <input type="text" id="p8" name="p8" placeholder="Digite sua resposta aqui">
+        </section>
 
-<div class="item-resultado">
-    <h2>
-        <a href="#" target="_blank">Galactus</a>
-    </h2>
-    <p class="descricao-meta">Galactus é uma entidade cósmica que devora planetas para sobreviver. Ele é considerado um dos seres mais poderosos do Universo Marvel.</p>
-    <a href="https://pt.wikipedia.org/wiki/Galactus" target="_blank">Mais Informações</a>
-</div>
+        <!-- Tabela de pontuação -->
+        <section>
+            <table border="2">
+                <thead>
+                    <tr>
+                        <th>Pontuação</th>
+                        <th>Avaliação</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>0-2</td>
+                        <td>Não desista! Cada tentativa é uma oportunidade de você aprender</td>
+                    </tr>
+                    <tr>
+                        <td>3-4</td>
+                        <td>Bom trabalho! Você está no caminho certo, continue praticando</td>
+                    </tr>
+                    <tr>
+                        <td>5-7</td>
+                        <td>Excelente! Você tem um bom conhecimento em programação</td>
+                    </tr>
+                    <tr>
+                        <td>8</td>
+                        <td>Parabéns! Você é um expert em programação</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="2">Obrigado por participar do quiz!</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </section>
 
-<div class="item-resultado">
-    <h2>
-        <a href="#" target="_blank">Thanos</a>
-    </h2>
-    <p class="descricao-meta">Thanos é um titã louco obcecado pela morte. Ele busca as Joias do Infinito para eliminar metade da vida no universo.</p>
-    <a href="https://pt.wikipedia.org/wiki/Thanos" target="_blank">Mais Informações</a>
-</div>
+                <!-- Botão de envio e resultado -->
+        <section>
+            <button onclick="corrigirQuiz()">Enviar respostas</button>
+            <div id="resultado"></div>
+        </section>
 
--->
-    </section>
+        <!-- Lista de respostas -->
+        <section>
+            <h2>Verifique suas respostas</h2>
+            <details>
+                <summary>Respostas corretas</summary>
+                <ol>
+                    <li>Pergunta 1: HTML</li>
+                    <li>Pergunta 2: Domínio</li>
+                    <li>Pergunta 3: Ex: Abc@2000!</li>
+                    <li>Pergunta 4: 1991</li>
+                    <li>Pergunta 5: Java, JavaScript</li>
+                    <li>Pergunta 6: Arquivo deve ter extensão .html</li>
+                    <li>Pergunta 7: type</li>
+                    <li>Pergunta 8: JavaScript</li>
+                </ol>
+            </details>
+        </section>
+
+        <!-- Feedback -->
+        <section>
+            <h2>Nos dê seu feedback</h2>
+            <form onsubmit="enviarFeedback(event)">
+                <fieldset>
+                    <legend>Informações de contato</legend>
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" name="nome" placeholder="Digite seu nome aqui"><br>
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email" placeholder="Digite seu e-mail aqui"><br>
+                    <label for="feedback">Feedback:</label><br>
+                    <textarea id="feedback" name="feedback" rows="4" cols="50" placeholder="Digite seu feedback aqui"></textarea><br>
+                    <button type="submit">Enviar feedback</button>
+                </fieldset>
+            </form>
+        </section>
     </main>
     <footer>
-        <p>2024 - O Universo Comics na palma da sua mão </p>
-        <p>Todos os Direitos autorais são reservados</p>
+        <p>&copy; 2025 Quiz para programadores. Todos os direitos reservados.</p>
+        <p>Desenvolvido por Flavio Henrique</p>
+        <p>Para contato <a href="sobremmim.html" target="_blank">clique aqui</a></p>
     </footer>
-    <script src="dados.js"></script>
-    <script src="app.js"></script>
+
+    <script src="script.js"></script>
+
 </body>
 </html>
+
